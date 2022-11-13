@@ -1,0 +1,12 @@
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\bin\Debug\net6.0\Concessionaria.Dominio.deps.json
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\bin\Debug\net6.0\Concessionaria.Dominio.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\bin\Debug\net6.0\Concessionaria.Dominio.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\Concessionaria.Dominio.csproj.AssemblyReference.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\Concessionaria.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\Concessionaria.Dominio.AssemblyInfoInputs.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\Concessionaria.Dominio.AssemblyInfo.cs
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\Concessionaria.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\Concessionaria.Dominio.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\refint\Concessionaria.Dominio.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\Concessionaria.Dominio.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Dominio\obj\Debug\net6.0\ref\Concessionaria.Dominio.dll

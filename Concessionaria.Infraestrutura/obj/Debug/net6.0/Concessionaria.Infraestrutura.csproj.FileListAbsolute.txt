@@ -1,0 +1,17 @@
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\bin\Debug\net6.0\Concessionaria.Infraestrutura.deps.json
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\bin\Debug\net6.0\Concessionaria.Infraestrutura.runtimeconfig.json
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\bin\Debug\net6.0\Concessionaria.Infraestrutura.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\bin\Debug\net6.0\Concessionaria.Infraestrutura.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\bin\Debug\net6.0\Concessionaria.Dominio.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\bin\Debug\net6.0\Concessionaria.Dominio.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.csproj.AssemblyReference.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.AssemblyInfoInputs.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.AssemblyInfo.cs
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.csproj.CopyComplete
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\refint\Concessionaria.Infraestrutura.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\Concessionaria.Infraestrutura.genruntimeconfig.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\Verzel\TesteVerzel\Concessionaria.Infraestrutura\obj\Debug\net6.0\ref\Concessionaria.Infraestrutura.dll
