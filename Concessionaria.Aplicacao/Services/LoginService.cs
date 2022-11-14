@@ -32,10 +32,10 @@ namespace Concessionaria.Aplicacao.Services
             var result = await _userRepository.GetById(filter: u => u.NomeUsuario == login.NomeUsuario, include: i => i.Include(r => r.TipoUsuario));
 
             if (result == null)
-                throw new BadRequestException(nameof(login.NomeUsuario), "Senha ou nome de usuário incorretos. Por favor, tente novamente.");
+                throw new BadRequestException(nameof(login), "Senha ou nome de usuário incorretos. Por favor, tente novamente.");
 
             if (!PasswordHasher.Verify(login.Senha, result.Senha))
-                throw new BadRequestException(nameof(login.Senha), "Senha ou nome de usuário incorretos. Por favor, tente novamente.");
+                throw new BadRequestException(nameof(login), "Senha ou nome de usuário incorretos. Por favor, tente novamente.");
 
             return new List<Claim>
             {

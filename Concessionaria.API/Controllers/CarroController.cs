@@ -9,7 +9,6 @@ namespace Concessionaria.API.Controllers
 {
     [ApiController]
     [Route("api/carro")]
-    [Authorize]
     public class CarroController : ControllerBase
     {
         private readonly ICarroService _carroService;
