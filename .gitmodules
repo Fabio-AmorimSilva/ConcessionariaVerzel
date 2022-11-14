@@ -1,0 +1,3 @@
+[submodule "Concessionaria.Angular"]
+	path = Concessionaria.Angular
+	url = https://github.com/Fabio-AmorimSilva/ConcessionariaVerzel
