@@ -1,0 +1,60 @@
+<p *ngIf="this.id && !carro"><em>Loading...</em></p>
+
+<div class="form" [formGroup]="form">
+  <h1>{{ title }}</h1>
+  <div class="carro-container" fxLayout="column" fxLayoutGap="10px">
+    <mat-form-field>
+      <input matInput type="text" id="nome"
+             formControlName="nome" required
+             placeholder="Nome..."
+             class="form-control" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="text" id="marca"
+             formControlName="marca" required
+             placeholder="Marca..."
+             class="form-control" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput
+             type="text" id="modelo"
+             formControlName="modelo" required
+             placeholder="Modelo..."
+             class="form-control" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="number" id="valor"
+              formControlName="valor" required
+              placeholder="Valor..."
+              class="form-control" />
+    </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Tipos de Carro</mat-label>
+        <mat-select formControlName="idTipoCarro">
+          <mat-option *ngFor="let tipo of tipoCarros" [value]="tipo.id">
+            {{tipo.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group commands button-footer" fxLayout="row" fxLayoutGap="5px">
+      <button mat-raised-button color="primary"
+              (click)="createAsync()"
+              [disabled]="form.invalid">
+        Cadastrar
+      </button>
+      <button mat-raised-button color="primary"
+              type="submit"
+              [routerLink]="['/home/carros']"
+              class="btn">
+        Cancel
+      </button>
+    </div>
+</div>
+
+

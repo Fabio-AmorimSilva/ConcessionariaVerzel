@@ -1,0 +1,7 @@
+<div mat-dialog-content>
+ <h4 class="confirm-modal-title" fxLayoutAlign="center center"> {{config.title}} </h4>
+</div>
+<div class="confirm-modal-buttons" mat-dialog-actions>
+  <button class="mat-btn" mat-raised-button color="warn" mat-dialog-close (click)="confirm(false)"><mat-icon>cancel</mat-icon>No</button>
+  <button class="mat-btn" mat-raised-button color="success" mat-dialog-close cdkFocusInitial (click)="confirm(true)"><mat-icon>check</mat-icon>Yes</button>
+</div>

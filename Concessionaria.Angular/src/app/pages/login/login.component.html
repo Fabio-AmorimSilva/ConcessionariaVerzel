@@ -1,0 +1,26 @@
+<mat-card fxLayoutAlign="center center">
+  <div class="login-container">
+    <div [formGroup]="form"  fxLayout="column" fxLayoutGap="10px">
+      <h4 fxLayoutAlign="center center">-- Concessionaria --</h4>
+      <mat-form-field flex>
+        <input matInput formControlName="nomeUsuario" type="text" placeholder="Nome de usuário...">
+      </mat-form-field>
+      <mat-form-field flex>
+        <input matInput formControlName="senha" type="password" placeholder="Senha...">
+      </mat-form-field>
+
+      <button flex mat-raised-button color="primary" type="submit" name="action"
+        (click)="loginAsync()">
+        Login
+      </button>
+      <button flex mat-raised-button color="primary" type="subimit" name="action"
+        [routerLink]="['/registrar']">
+        Registrar
+      </button>
+      <button flex mat-raised-button color="primary" type="subimit" name="action"
+        [routerLink]="['/home']">
+        Voltar
+      </button>
+    </div>
+  </div>
+</mat-card>
