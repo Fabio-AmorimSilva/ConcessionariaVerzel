@@ -26,6 +26,8 @@ export class CarrosComponent implements OnInit {
   value!: string;
   totalPages!: number;
   isAdmin!: boolean;
+  file!: File;
+  imagemUrl = 'assets/img/image.jpg';
 
   constructor(
     private carroAdmService: CarroAdmService,
@@ -48,11 +50,7 @@ export class CarrosComponent implements OnInit {
 
    VerifyIsAdmin(): void{
       let role = this.authService.getRole();
-      if(role == "Admin"){
-        this.isAdmin = true;
-      }else{
-        this.isAdmin = false;
-      }
+      (role == "Admin") ? this.isAdmin = true: this.isAdmin = false;
    }
 
    async refresh(): Promise<void>{
@@ -96,6 +94,25 @@ export class CarrosComponent implements OnInit {
       skip: event.pageIndex * event.pageSize,
     } as BaseParams;
     await this.loadData(params);
+  }
+
+  async onFileChange(event: any, id: number): Promise<void>{
+    const reader = new FileReader();
+
+    reader.onload = (event: any) => this.imagemUrl = event.target.result;
+
+    this.file = event.target.files[0];
+    reader.readAsDataURL(this.file);
+
+    await this.uploadImg(id);
+  }
+
+  async uploadImg(id: number): Promise<void>{
+    await lastValueFrom(this.carroAdmService.putImgCarro(id, this.file));
+  }
+
+  async getImg(id: number): Promise<void>{
+    await lastValueFrom(this.carroService.getImg(id));
   }
 
 }

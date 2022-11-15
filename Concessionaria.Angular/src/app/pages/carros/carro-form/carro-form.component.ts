@@ -22,6 +22,7 @@ export class CarroFormComponent implements OnInit {
   id?:number;
   tipoCarros!: Enumeration[];
   response!: string;
+  acao!: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -44,14 +45,15 @@ export class CarroFormComponent implements OnInit {
         this.carroAdmService.getById(this.id).subscribe(result => {
           this.carro = result as Carro;
           this.title = "Edit - " + this.carro.nome;
+          this.acao = "Atualizar";
 
-          //Update the form with the user value
           this.form.patchValue(this.carro);
           this.form.get("idTipoCarro")?.setValue(this.carro.tipoCarro.id);
         })
       }else{
         // New Mode
         this.title = "Cadastrar novo carro";
+        this.acao = "Cadastrar";
       }
     }
 

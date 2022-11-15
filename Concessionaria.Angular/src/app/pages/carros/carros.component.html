@@ -34,7 +34,8 @@
       <mat-card-title>{{info.nome}}</mat-card-title>
       <mat-card-subtitle>Fabricante - {{info.marca}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://localhost:7065/img/default/carro-default.png" alt="">
+    <input [disabled]="!isAdmin" type="file" #file (change)="onFileChange($event, info.id)" style="display: none">
+    <img mat-card-image [src]="getImg(info.id)" (click)="file.click()">
     <mat-card-content>
       <p>Modelo - {{info.modelo}}</p>
       <p>R$ - {{info.valor}}</p>

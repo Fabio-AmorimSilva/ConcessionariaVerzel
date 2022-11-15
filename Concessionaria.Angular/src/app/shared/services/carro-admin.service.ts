@@ -14,9 +14,13 @@ export class CarroAdmService extends ApibaseService<Carro>{
     super("admin/carro", http)
    }
 
-   getImgCarro(id: number): Observable<string>{
-    return this.http.get<string>(`${this.env}${this.route}/img/${id}`).pipe(take(1));
-  }
+   putImgCarro(id: number, file: File): Observable<any>{
+    const fileToUpload = file as File;
+    const img = new FormData();
+    img.append('img', fileToUpload);
+
+    return this.http.put(`${this.env}${this.route}/img/${id}`, img).pipe(take(1));
+   }
 
    getTipoCarros(): Observable<Enumeration[]>{
       return this.http.get<Enumeration[]>(`${this.env}${this.route}/tipos-carro`).pipe(take(1));

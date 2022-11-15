@@ -1,10 +1,8 @@
 /* eslint-disable @angular-eslint/use-lifecycle-interface */
-import { Roles } from './../../enums/roles';
 import { NavItem } from './classes/nav-item';
 import { Router } from '@angular/router';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
-import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
@@ -24,7 +22,6 @@ export class NavbarComponent implements OnInit{
     this.setItems();
     this.verifyToken();
   }
-
 
   setItems(): void{
     this.items = [
@@ -46,7 +43,5 @@ export class NavbarComponent implements OnInit{
     }else{
       this.isLogged = true;
     }
-
   }
-
 }
