@@ -2,7 +2,6 @@
 using Concessionaria.Aplicacao.Params;
 using Concessionaria.Aplicacao.ViewModels.Carro;
 using Concessionaria.Aplicacao.ViewModels.Pagination;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Concessionaria.API.Controllers
@@ -28,6 +27,13 @@ namespace Concessionaria.API.Controllers
                 Skip = carroParams.Skip,
                 Take = carroParams.Take,
             };
+        }
+
+        [HttpGet("img/{id:int}")]
+        public ActionResult GetImg([FromRoute] int id)
+        {
+            var result = _carroService.GetImg(id);
+            return Ok(result);
         }
     }
 }

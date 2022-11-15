@@ -71,13 +71,7 @@ namespace Concessionaria.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("img/{id:int}")]
-        [AllowAnonymous]
-        public string GetImg([FromRoute] int id)
-        {
-            var result = _carroService.GetImg(id);
-            return result;
-        }
+
 
         [HttpGet("tipos-carro")]
         public IEnumerable<TipoCarro> GetTipoCarros()

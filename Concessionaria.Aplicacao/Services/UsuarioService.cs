@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Concessionaria.Aplicacao.Exceptions;
 using Concessionaria.Aplicacao.Interfaces;
+using Concessionaria.Aplicacao.Params;
 using Concessionaria.Aplicacao.ViewModels.Usuario;
 using Concessionaria.Dominio.Core;
 using Concessionaria.Dominio.Interfaces.Comum;
@@ -9,6 +10,7 @@ using Concessionaria.Dominio.Models;
 using Concessionaria.Dominio.Models.Enumerations;
 using Concessionaria.Infraestrutura.Utils;
 using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 
 namespace Concessionaria.Aplicacao.Services
 {
@@ -63,6 +65,13 @@ namespace Concessionaria.Aplicacao.Services
 
             return _mapper.Map<UsuarioResponse>(usuarioBusca);
 
+        }
+
+        public async Task<IEnumerable<UsuarioResponse>> GetAllUsuarios(UsuarioParams query)
+        {
+            return _mapper.Map<IEnumerable<UsuarioResponse>>(
+                await _usuarioRepository.GetAll(predicate: query.Filter(),
+                include: i => i.Include(r => r.TipoUsuario), skip: query.Skip, take: query.Take));
         }
 
         public async Task<UsuarioResponse> GetById(int id)

@@ -59,7 +59,7 @@ namespace Concessionaria.Aplicacao.Services
 
         public async Task<CarroResponse> AtualizaCarroAsync(CarroRequest carroRequest, int id)
         {
-            var carroBusca = await _carroRepository.GetById(filter: c => c.Id == id)?? 
+            var carroBusca = await _carroRepository.GetById(filter: c => c.Id == id) ?? 
                 throw new BadRequestException(nameof(id), "Carro não consta na base de dados");
 
             var validation = _validator.Validate(carroRequest);
@@ -139,7 +139,7 @@ namespace Concessionaria.Aplicacao.Services
             throw new BadRequestException(nameof(id), $"Não existe nenhuma imagem no carro com id: {id}");
         }
 
-        public string GetImg(int id)
+        public FileStream GetImg(int id)
         {
             var entity = _carroRepository.GetById(u => u.Id == id).GetAwaiter().GetResult()
                 ?? throw new BadRequestException(nameof(id), $"Carro com {id} não encontrado.");
@@ -152,10 +152,7 @@ namespace Concessionaria.Aplicacao.Services
             if (string.IsNullOrEmpty(pathImg))
                 throw new BadRequestException(nameof(id), "Nenhuma imagem encotrada.");
 
-            byte[] bytes = File.ReadAllBytes(entity.Foto);
-            string image = Convert.ToBase64String(bytes);
-
-            return image;
+            return _fileStorage.GetFile(pathImg);
 
         }
         public IEnumerable<TipoCarro> GetTipoCarros()

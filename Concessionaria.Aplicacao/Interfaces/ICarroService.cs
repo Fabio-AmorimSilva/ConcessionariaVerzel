@@ -16,7 +16,7 @@ namespace Concessionaria.Aplicacao.Interfaces
         IEnumerable<TipoCarro> GetTipoCarros();
         Task<CarroResponse> UploadImg(int id, IFormFile img);
         Task<CarroResponse> RemoveImg(int id);
-        string GetImg(int id);
+        FileStream GetImg(int id);
         Task<int> ContaCarros();
     }
 }
