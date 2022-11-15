@@ -4,20 +4,26 @@ O projeto foi feito usando Arquitetura Limpa - Arquitetura Cebola (Onion Archite
 - Possuí 4 camadas no back-end e 1 camada front-end
 
 - Back-end
+  - Todo back-end com .Net Core 6
   - Concessionaria.API
+    - API REST, Controllers, CORS, Configrações de autenticação e autorização, Versionamento, etc
   - Concessionaria.Aplicacao
+    - Regras de negócio, serviços, validações, exceções, mappers, etc
   - Concessionaria.Dominio
+    - Entidades do domninio
   - Concessinaria.Infraestrutura
+    - Migrations, Mappings, DbContext, etc
 
 - Front-end
   - Concessinaria.Angular
+    - Todo front-end da aplicação com Angular 14
 
 "#Caracteristícas do Projeto back-end"
 
 - O projeto foi desenvolvido utilizando a IDE Visual Studio 2022
 - O back-end é composto de uma API REST (olhar Concessionaria.API)
 - Possuí validações com a utilização de FluentAPI/FluentValidition (olhar em Validations em Concessionaria.Aplicacao)
-- Possuí paginação skip/take
+- Possuí paginação skip/take (olhar Concessionaria.Infraestrutura e Concessionaria.Aplicacao)
 - Possuí buscas via PredicateBuilder (olhar Params em Concessionaria.Aplicacao)
 - A API possuí autenticação via token JWT
 - A parte da API que concerne as operações de cadastro, edição e deleção de carros só pode ser acessada por um usuário do tipo admin
@@ -42,7 +48,7 @@ O projeto foi feito usando Arquitetura Limpa - Arquitetura Cebola (Onion Archite
 
 "#Montagem do banco de dados"
 
-- O banco de dados utilizado foi  Microsoft SQL Server 2019
+- O banco de dados utilizado foi o Microsoft SQL Server 2019
 - A string de conexão para utilizar o banco é:
 {
   "ConnectionStrings": {
